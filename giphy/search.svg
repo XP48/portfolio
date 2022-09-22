@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #0080ff;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-width: 51.083px;
+      }
+
+      .cls-2 {
+        stroke-width: 41.667px;
+      }
+    </style>
+  </defs>
+  <path id="Ligne_1" data-name="Ligne 1" class="cls-1" d="M873.666,751.97l213.764,200.6Z"/>
+  <path class="cls-1" d="M780.782,494.284c83.5,0,151.19,70.167,151.19,156.721s-67.69,156.721-151.19,156.721S629.593,737.56,629.593,651.005,697.283,494.284,780.782,494.284Z"/>
+  <path id="Rectangle_arrondi_1" data-name="Rectangle arrondi 1" class="cls-2" d="M928.909,817.981l12.057-12.507a10,10,0,0,1,14.14-.26l139.534,134.51a10,10,0,0,1,.26,14.14l-12.06,12.508a10,10,0,0,1-14.14.259L929.168,832.121A10,10,0,0,1,928.909,817.981Z"/>
+</svg>

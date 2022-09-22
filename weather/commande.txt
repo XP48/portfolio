@@ -1,0 +1,27 @@
+
+		~~~~~~~~~~~~~~~~~~~~~~~~~
+		~ 	xp48.tech 	~
+		~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Format des icônes : .svg
+Taille de la zone qui contient l'icône : 64px 64px (il s'agit de la zone l'icône ne prend pas tout cet espace !)
+
+- soleil qui tourne
+
+- soleil qui tourne avec un nuage un peu dessus, le nuage peut éventuellement bouger de gauche à droite très légèrement
+
+- nuage qui se déplace légèrement de gauche à droite
+
+- nuage avec 1 goutte de pluie qui tombe doucement
+
+- nuage avec plusieurs gouttes de pluie qui tombent un peu plus vite
+
+- nuage avec un éclair qui bouge un peu
+
+- nuage avec des petits flocons de neige qui tombent doucement, le nuage peut éventuellement bouger de gauche à droite très légèrement
+
+- lune
+
+- lune avec un nuage un peu dessus, le nuage peut éventuellement bouger de gauche à droite très légèrement
+
+- un icône qui bouge pour faire le chargement
