@@ -23,7 +23,7 @@ const imgIcone = document.querySelector('.logo-meteo');
 const chargementContainer = document.querySelector('.overlay-icon-chargement');
 const time = document.querySelector('.time')
 
-if (18 >= new Date().getHours() && new Date().getHours() >= 7) {
+if (16 >= new Date().getHours() && new Date().getHours() >= 7) {
     document.getElementsByClassName("container")[0].style.backgroundImage = 'linear-gradient(135deg, rgb(255, 201, 83), rgb(63, 142, 232) 30%)';
     document.body.style.backgroundImage = 'linear-gradient(0deg, rgb(26, 111, 190),rgb(136, 188, 255))';
     document.getElementsByClassName("overlay-icon-chargement")[0].style.backgroundImage = 'linear-gradient(0deg, rgb(26, 111, 190),rgb(136, 188, 255))';
