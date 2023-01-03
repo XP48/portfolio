@@ -12,7 +12,7 @@
     ],
     "theme_color" : "black",
     "background_color" : "#84C1FF",
-    "start_url" : "/",
+    "start_url" : "/portfolio",
     "display" : "standalone",
     "orientation" : "natural",
     "shortcuts" : [
