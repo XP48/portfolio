@@ -127,13 +127,43 @@ html {
 }
 .skills-grid {
     position: absolute;
-    right: 5%;
+    top: 30%;
+    right: 10%;
     width: 40%;
-    height: 40%;
+    height: 50%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 20%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f1f8fe;
     font-size: xx-large;
+}
+.projets {
+    height: 100vh;
+    width: 100vw;
+    background-color: #242424;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projets-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f8fe;
+    font-size: xxx-large;
+    position: absolute;
+    top: 8%;
+}
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    margin-top: 6%;
+    grid-gap: 5%;
+}
+.projets-grid img {
+    width: 100%;
+    border-radius: 8px;
 }
