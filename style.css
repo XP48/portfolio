@@ -1,0 +1,121 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    overflow-x: hidden;
+}
+.navbar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    color: #f1f8fe;
+    padding: 1%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+}
+.blue {
+    color: #1e8dd9;
+    font-weight: 500;
+}
+.navbar-links {
+    display: flex;
+    position: absolute;
+    right: 3%;
+    justify-content: space-between;
+    width: 40%;
+}
+.navbar-links a {
+    justify-content: end;
+    text-decoration: none;
+    color: #f1f8fe;
+}
+.presentation {
+    height: 100vh;
+    width: 100vw;
+    background-color: #242424;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.text-present {
+    position: absolute;
+    left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f8fe;
+    width: 30%;
+}
+.present {
+    font-size: xx-large;
+    font-weight: 600;
+}
+.name {
+    font-size: xxx-large;
+    color: #1e8dd9;
+    font-weight: bold;
+}
+.Im {
+    color: #1e8dd9;
+}
+.descript {
+    font-weight: 200;
+}
+.more {
+    text-decoration: none;
+    height: 50px;
+    font-size: 100%;
+    padding: 2%;
+    margin: 5%;
+    margin-left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: #1e8dd9;
+    color: #f1f8fe;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+}
+.links {
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.github {
+    width: 50px;
+    height: 50px;
+    background-color: #1e8dd9;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.github img {
+    width: 35px;
+    height: 35px;
+}
+.logo-present {
+    position: absolute;
+    right: 10%;
+}
+.logo {
+    width: 30vw;
+    border-radius: 20%;
+    border: solid 5px #0f5995;
+}
+.skills {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #3b3e42;
+}
