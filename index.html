@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-name"><p class="navbar-title"><span class="blue">XP48</span></p></div><div class="navbar-links"><a href="#skills">Skills</a><a href="#projets">Mes Projets</a><a href="contact">Me contacter</a></div>
+        <div class="navbar-name"><p class="navbar-title"><span class="blue">XP48</span></p></div><div class="navbar-links"><a href="#skills">Skills</a><a href="#projets">Mes Projets</a><a href="#contact">Me contacter</a></div>
     </nav>
     <div class="presentation" id="home">
         <div class="text">
@@ -49,7 +49,7 @@
         </div>
     </div>
     <div class="projets" id="projets">
-        <h1 class="projets-title">Mes <span class="blue">Projets</span></h1>
+        <h1 class="middle-title">Mes <span class="blue">Projets</span></h1>
         <div class="projets-grid">
             <img class="img1" src="./src/img/projets/heure.png" alt="heure">
             <img class="img2" src="./src/img/projets/password_generator.png" alt="generateur de mots de passes">
@@ -58,6 +58,14 @@
             <img class="img5" src="./src/img/projets/meteo.png" alt="meteo">
             <img class="img6" src="./src/img/projets/mrbobot.png" alt="mrbobot">
         </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1 class="middle-title">Me <span class="blue">Contacter</span></h1>
+        <form class="form-contact" action="" method="post">
+            <input type="text" name="name" id="name" placeholder="Votre nom"><input type="email" name="mail" id="mail" placeholder="Votre e-mail">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ..."></textarea>
+            <button type="submit" id="send">Envoyer</button>
+        </form>
     </div>
 </body>
 </html>

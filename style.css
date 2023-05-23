@@ -147,7 +147,7 @@ html {
     align-items: center;
     justify-content: center;
 }
-.projets-title {
+.middle-title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f1f8fe;
     font-size: xxx-large;
@@ -166,4 +166,56 @@ html {
 .projets-grid img {
     width: 100%;
     border-radius: 8px;
+}
+.contact {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b3e42;
+}
+.form-contact {
+    width: 50vw;
+    height: 50vh;
+}
+#name {
+    width: 45%;
+    margin-right: 5%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #242424;
+}
+#mail {
+    width: 45%;
+    margin-left: 5%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #242424;
+}
+#message {
+    margin-top: 5%;
+    width: 100%;
+    height: 80%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #242424;
+    color: white;
+}
+#send {
+    margin-top: 5%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #242424;
+    color: gray;
+    width: 100%;
 }
