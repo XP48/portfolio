@@ -188,6 +188,7 @@ html {
     border-radius: 15px;
     border: none;
     background-color: #242424;
+    color: white;
 }
 #mail {
     width: 45%;
@@ -197,6 +198,7 @@ html {
     border-radius: 15px;
     border: none;
     background-color: #242424;
+    color: white;
 }
 #message {
     margin-top: 5%;
