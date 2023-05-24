@@ -160,12 +160,16 @@ html {
     align-items: center;
     width: 80%;
     height: 70%;
-    margin-top: 6%;
+    margin-top: 1%;
     grid-gap: 5%;
 }
 .projets-grid img {
     width: 100%;
     border-radius: 8px;
+}
+#github_projets {
+    position: absolute;
+    bottom: 6%;
 }
 .contact {
     height: 100vh;
