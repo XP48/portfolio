@@ -27,16 +27,54 @@ html {
     color: #1e8dd9;
     font-weight: bold;
 }
-.navbar-links {
+.navbar-desktop {
     display: flex;
     position: absolute;
-    right: 3%;
     justify-content: space-between;
-    width: 40%;
+    width: 100%;
+    padding-right: 35px;
 }
-.navbar-links a {
+.navbar-desktop a {
     justify-content: end;
     text-decoration: none;
+    color: #f1f8fe;
+}
+.navbar-burger {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 1%;
+    right: 6%;
+    z-index: 2;
+}
+.burger-menu {
+    margin-bottom: 5px;
+    display: block;
+    height: 5px;
+    width: 30px;
+    background-color: #f1f1f1;
+}
+.navbar-mobile {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    background-color: #2b2a2a;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+ul {
+    width: 100%;
+}
+li {
+    margin: 50px;
+    list-style-type: decimal-leading-zero;
+    color: #0f5995;
+}
+li a {
+    text-decoration: underline;
     color: #f1f8fe;
 }
 .presentation {
@@ -185,7 +223,7 @@ html {
 }
 .form-contact {
     width: 50vw;
-    height: 50vh;
+    height: fit-content;
 }
 #name {
     width: 45%;
@@ -228,3 +266,37 @@ html {
     color: gray;
     width: 100%;
 }
+
+@media (max-width: 769px) {
+    .navbar-desktop {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .text {
+        width: 80%;
+        padding: 20px;
+    }
+    .skills {
+        align-items: normal;
+    }
+    .skills-grid {
+        width: 80%;
+        bottom: 10%;
+        top: unset;
+    }
+    .projets-grid {
+        grid-template-columns: unset;
+        overflow: auto;
+        height: 60%;
+    }
+    .form-contact {
+        width: 80vw;
+    }
+    #name, #mail {
+        width: 100%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+  }
