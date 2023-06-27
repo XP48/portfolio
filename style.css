@@ -232,9 +232,8 @@ li a {
     .navbar-burger {
         display: block;
     }
-    .presentation {
-        align-items: normal;
-        padding-top: 15%;
+    .presentation .logo {
+        display: none;
     }
     .logo-present {
         position: absolute;
