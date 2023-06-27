@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <title>XP48 | Portfolio</title>
     <link rel="icon" href="./src/img/logo_recadre.jpg">
+    <script src="menu.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-desktop"><a href="#home"><p class="navbar-title"><span class="blue">XP48</span></p></a><a href="#skills">Skills</a><a href="#projets">Mes Projets</a><a href="#contact">Me contacter</a></div>
-        <div class="navbar-burger"><span class="burger-menu"></span><span class="burger-menu"></span><span class="burger-menu"></span></div>
-        <div class="navbar-mobile">
+        <div onclick="toggle_menu()" class="navbar-burger"><span class="burger-menu" id="bar-left"></span><span class="burger-menu" id="bar-middle"></span><span class="burger-menu" id="bar-right"></span></div>
+        <div class="navbar-mobile" id="nav-mob">
             <ul>
-                <li><a href="#home"><p class="navbar-title"><span class="blue"><u>XP48</u></span></p></a></li>
-                <li><a href="#skills"><u>Skills</u></a></li>
-                <li><a href="#projets"><u>Mes Projets</u></a></li>
-                <li><a href="#contact"><u>Me contacter</u></a></li>
+                <li><a onclick="toggle_menu()" href="#home"><p class="navbar-title"><span class="blue"><u>XP48</u></span></p></a></li>
+                <li><a onclick="toggle_menu()" href="#skills"><u>Skills</u></a></li>
+                <li><a onclick="toggle_menu()" href="#projets"><u>Mes Projets</u></a></li>
+                <li><a onclick="toggle_menu()" href="#contact"><u>Me contacter</u></a></li>
             </ul>
         </div>
     </nav>
@@ -71,7 +72,7 @@
     </div>
     <div class="contact" id="contact">
         <h1 class="middle-title">Me <span class="blue">Contacter</span></h1>
-        <form class="form-contact" action="" method="post">
+        <form class="form-contact" action="send.php" method="post">
             <input type="text" name="lastname" id="name" placeholder="Votre nom"><input type="email" name="mail" id="mail" placeholder="Votre e-mail">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ..."></textarea>
             <button type="submit" id="send">Envoyer</button>

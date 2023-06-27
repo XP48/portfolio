@@ -43,16 +43,18 @@ html {
     height: 30px;
     width: 30px;
     position: fixed;
-    top: 1%;
-    right: 6%;
+    top: 2%;
+    right: 2%;
     z-index: 2;
+    display: none;
 }
 .burger-menu {
     margin-bottom: 5px;
-    display: block;
     height: 5px;
     width: 30px;
     background-color: #f1f1f1;
+    display: block;
+    transition-duration: 1s;
 }
 .navbar-mobile {
     top: 0;
@@ -63,7 +65,7 @@ html {
     position: absolute;
     align-items: center;
     text-align: center;
-    display: flex;
+    display: none;
 }
 ul {
     width: 100%;
@@ -271,12 +273,25 @@ li a {
     .navbar-desktop {
         display: none;
     }
+    .navbar-burger {
+        display: block;
+    }
+    .presentation {
+        align-items: normal;
+        padding-top: 15%;
+    }
+    .logo-present {
+        position: absolute;
+        bottom: 5%;
+        right: unset;
+    }
     .logo {
-        display: none;
+        width: 45vw;
     }
     .text {
-        width: 80%;
+        width: 85vw;
         padding: 20px;
+        left: unset;
     }
     .skills {
         align-items: normal;
