@@ -94,14 +94,16 @@ li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f1f8fe;
     width: 30%;
+    word-wrap: break-word;
 }
 .present {
     font-size: xx-large;
     font-weight: 600;
+    color: #f1f8fe;
 }
 .name {
     font-size: xxx-large;
-    color: #1e8dd9;
+    color: #f1f8fe;
     font-weight: bold;
 }
 .Im {
@@ -223,52 +225,6 @@ li a {
     justify-content: center;
     background-color: #3b3e42;
 }
-.form-contact {
-    width: 50vw;
-    height: fit-content;
-}
-#name {
-    width: 45%;
-    margin-right: 5%;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    background-color: #242424;
-    color: white;
-}
-#mail {
-    width: 45%;
-    margin-left: 5%;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    background-color: #242424;
-    color: white;
-}
-#message {
-    margin-top: 5%;
-    width: 100%;
-    height: 50%;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    background-color: #242424;
-    color: white;
-}
-#send {
-    margin-top: 5%;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    background-color: #242424;
-    color: gray;
-    width: 100%;
-}
-
 @media (max-width: 769px) {
     .navbar-desktop {
         display: none;
@@ -306,12 +262,8 @@ li a {
         overflow: auto;
         height: 60%;
     }
-    .form-contact {
-        width: 80vw;
-    }
-    #name, #mail {
-        width: 100%;
-        margin-bottom: 5%;
-        margin-left: 0%;
+    .contact {
+        align-items: normal;
+        padding-top: 50%;
     }
   }
