@@ -78,6 +78,7 @@ li {
 li a {
     text-decoration: underline;
     color: #f1f8fe;
+    transition-duration: 1s;
 }
 .presentation {
     height: 100vh;
@@ -127,6 +128,7 @@ li a {
     border-radius: 8px;
     align-items: center;
     display: flex;
+    transition: 1s;
 }
 .links {
     position: absolute;
@@ -143,6 +145,7 @@ li a {
     align-items: center;
     justify-content: center;
     display: flex;
+    transition-duration: 1s;
 }
 .github img {
     width: 35px;
@@ -211,6 +214,7 @@ li a {
 .projets-grid img {
     width: 100%;
     border-radius: 8px;
+    transition-duration: 1s;
 }
 #github_projets {
     position: absolute;
@@ -224,6 +228,14 @@ li a {
     align-items: center;
     justify-content: center;
     background-color: #3b3e42;
+}
+.more:hover, .github:hover {
+    background-color: #0f5995;
+    transition-duration: 1s;
+}
+.projets-grid img:hover{
+    transition-duration: 1s;
+    transform: scale(0.9) perspective(100rem) rotateX(28deg) rotateY(-26deg) rotate(15deg) translateX(-3rem) translateY(-2rem);
 }
 @media (max-width: 769px) {
     .navbar-desktop {
