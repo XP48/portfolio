@@ -1,0 +1,143 @@
+/* Importation de la police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Définition des variables */
+:root {
+    --blanc: #f1f1f1;
+    --noir: #2b2b2b;
+    --bleu: #1E8DD9;
+}
+
+/* Réinitialisation des styles par défaut */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles de la police Roboto Mono */
+.roboto-mono-xxs {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+.roboto-mono-xs {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.roboto-mono-s {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.roboto-mono-normal {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-mono-l {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.roboto-mono-xl {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.roboto-mono-xxl {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Mise en page */
+.bleu {
+    background-color: var(--bleu);
+    font-weight: bolder;
+}
+
+/* Debut du css de la page */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.accueil {
+    width: 95vw;
+    height: 95vh;
+    background-color: var(--blanc);
+    border-radius: 0 0 20px 20px;
+    border: var(--noir) 2px dotted;
+    border-top: none;
+    padding: 2%;
+    z-index: 1;
+}
+
+header nav p {
+    text-decoration: underline 1px;
+    padding: 2px;
+    width: 100%;
+}
+
+header nav p:hover {
+    cursor: pointer;
+}
+
+header nav p a {
+    position: relative;
+    text-decoration: none;
+    color: var(--noir);
+}
+
+header nav p a::before {
+    width: 0;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+    background: var(--bleu);
+    height: 100%;
+    z-index: -1;
+    transition: .3s ease-in-out;
+}
+
+header nav p a:hover::before {
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    border-bottom: solid 1px var(--noir);
+    padding-bottom: 1%;
+}
+
+.name {
+    font-size: 40px;
+}
+
+/* Accueil */
+
+.description {
+    font-size: 20px;
+    width: 40%;
+    height: 100%;
+    word-break: keep-all;
+    margin-top: 1%;
+}
