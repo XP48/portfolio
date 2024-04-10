@@ -69,16 +69,21 @@ body {
     background-image: url('../src/img/blob-scene-haikei.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 /* Debut du css de la page */
 .container {
+    width: 85vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .accueil {
-    width: 85vw;
+    width: 100%;
     margin-top: 3%;
     border-radius: 20px;
     border: var(--bleu) 2px solid;
@@ -135,7 +140,7 @@ header nav a:hover {
 
 
 header nav a:active {
-    transform: none;
+    transform: translate(3px, 3px);
     box-shadow: none;
     transition-duration: 0s;
 }
@@ -148,10 +153,38 @@ header nav a:active {
 
 .description {
     font-size: 20px;
-    width: 40%;
-    height: 100%;
     word-break: keep-all;
-    margin-top: 1%;
+    margin-top: 3%;
+    text-align: center;
 }
 
-/* fond */
+/* Grille */
+
+.bento {
+    display: grid;
+    height: 600px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 3%;
+    grid-gap: 3%;
+}
+
+.case {
+    border-radius: 20px;
+    border: var(--bleu) 2px solid;
+    color: var(--noir);
+    padding: 2%;
+    backdrop-filter: blur(200px);
+    transition-duration: 1s;
+}
+
+.case:hover {
+    cursor: pointer;
+    transform: translate(-3px, -3px);
+    transition-duration: 1s;
+}
+
+.cv {
+    grid-row: 1 / 3;
+}
