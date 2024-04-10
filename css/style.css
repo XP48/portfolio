@@ -65,40 +65,52 @@
     font-weight: bolder;
 }
 
+body {
+    background-image: url('../src/img/blob-scene-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* Debut du css de la page */
 .container {
-    min-height: 200vh;
     display: flex;
     justify-content: center;
 }
 
 .accueil {
-    width: 95vw;
-    height: 95vh;
-    background-color: var(--blanc);
-    border-radius: 0 0 20px 20px;
-    border: var(--noir) 2px dotted;
-    border-top: none;
+    width: 85vw;
+    margin-top: 3%;
+    border-radius: 20px;
+    border: var(--bleu) 2px solid;
+    color: var(--noir);
     padding: 2%;
     z-index: 1;
+    backdrop-filter: blur(100px);
 }
 
 
 
 /* Header */
 header {
+    color: var(--noir);
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    
     border-bottom: solid 1px var(--noir);
     padding-bottom: 1%;
 }
 
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
 header nav p {
-    text-decoration: underline 1px;
     padding: 2px;
+    transition-duration: 1s;
     width: 100%;
 }
 
@@ -106,28 +118,26 @@ header nav p:hover {
     cursor: pointer;
 }
 
-header nav p a {
+header nav a {
     position: relative;
     text-decoration: none;
     color: var(--noir);
+    border: solid 1px var(--noir);
+    border-radius: 20px;
+    padding: 5px;
+    transition-duration: 1s;
 }
 
-header nav p a::before {
-    width: 0;
-    position: relative;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: " ";
-    background: var(--bleu);
-    height: 100%;
-    z-index: -1;
-    transition: .3s ease-in-out;
+header nav a:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: var(--noir) 3px 3px;
 }
 
-header nav p a:hover::before {
-    width: 100%;
-    transition: .3s ease-in-out;
+
+header nav a:active {
+    transform: none;
+    box-shadow: none;
+    transition-duration: 0s;
 }
 
 .name {
@@ -143,3 +153,5 @@ header nav p a:hover::before {
     word-break: keep-all;
     margin-top: 1%;
 }
+
+/* fond */
