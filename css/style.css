@@ -115,12 +115,7 @@ header nav {
 
 header nav p {
     padding: 2px;
-    transition-duration: 1s;
     width: 100%;
-}
-
-header nav p:hover {
-    cursor: pointer;
 }
 
 header nav a {
@@ -130,11 +125,14 @@ header nav a {
     border: solid 1px var(--noir);
     border-radius: 20px;
     padding: 5px;
-    transition-duration: 1s;
+    transition-duration: 0s;
+    transition-delay: 0s;
 }
 
 header nav a:hover {
     transform: translate(-3px, -3px);
+    transition-delay: 0s;
+    cursor: pointer;
     box-shadow: var(--noir) 3px 3px;
 }
 
@@ -188,46 +186,81 @@ header nav a:active {
     text-align: center;
 }
 
-.case:hover {
+.link:hover {
     cursor: pointer;
+    background-color: transparent;
+    transform: scale(1.1);
 }
 
 .cv {
     grid-column: span 2;
     grid-row: span 4;
+    background-color: #ee57ff;
 }
 
 .github {
     grid-column: span 4;
     flex-direction: row;
+    background-color: #ff9957;
 }
 
 .linkedin {
     grid-column: span 2;
     grid-row: span 2;
+    background-color: #68ff57;
 }
 .presentation {
     grid-row: span 4;
     grid-column: span 3;
     font-size: 20px;
+    background-color: #9bd7ff;
 }
 
 .generate {
     grid-row: span 5;
+    background-color: var(--bleu);
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.desc {
+    grid-column: span 2;
+    background-color: #ee57ff;
+}
+
+.aim {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: url('../src/img/aim.png');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Animations au scroll */
 
-.r [class*="reveal-"] {
+.reveal [class*="reveal-"] {
     opacity: 0;
     transform: translateY(-60px);
+}
+
+.reveal [class$="-bottom"] {
+    transform: translateY(80px);
+}
+
+.reveal [class$="-left"] {
+    transform: translateX(-80px);
+}
+
+.reveal [class$="-right"] {
+    transform: translateX(80px);
 }
 
 [class*="reveal-"] {
     opacity: 1;
     transform: translateY(0);
-    transition: 1s cubic-bezier(.5, 0, 0, 1);
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
 }
+
 
 .reveal-2 {
     transition-delay: .1s;
