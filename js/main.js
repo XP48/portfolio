@@ -11,15 +11,13 @@ const options = {
 const handleIntersect = function (entries, observer) {
     entries.forEach(function (entry) {
         if(entry.intersectionRatio > ratio) {
-            entry.target.classList.remove('reveal')
+            entry.target.classList.add('reveal-visible')
             observer.unobserve(entry.target)
-        } else {
-
         }
     })
 }
 
 const observer = new IntersectionObserver(handleIntersect, options)
-document.querySelectorAll('.reveal').forEach(function (r) {
+document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
     observer.observe(r)
 })
