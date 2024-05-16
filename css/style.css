@@ -88,7 +88,7 @@ body {
     flex-direction: column;
     transition-duration: .7s;
     text-align: center;
-    height: 20rem;
+    min-height: 20rem;
 }
 
 .case a {
@@ -119,7 +119,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
-    margin: 5%;
+    margin: 1rem;
 }
 
 .accueil {
@@ -129,7 +129,8 @@ body {
     padding: 2%;
     z-index: 1;
     backdrop-filter: blur(100px);
-    grid-column: 1 / -1;
+    margin: 1rem;
+    display: grid;
 }
 
 .cv {
@@ -138,6 +139,7 @@ body {
 
 .github {
     background-color: #ff9957;
+    grid-column: span 2;
 }
 
 .github a {
@@ -153,6 +155,7 @@ body {
 }
 
 .generate {
+    grid-row: span 2;
     background-color: var(--bleu);
     flex-direction: column;
     font-size: 20px;
@@ -190,6 +193,7 @@ header nav {
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
+    grid-column: span 2;
 }
 
 header nav div {
@@ -279,4 +283,16 @@ header nav a:active {
 
 .reveal-4 {
     transition-delay: .4s;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .github {
+        grid-column: span 1;
+    }
+}
+@media (min-width: 700px) and (max-width: 971px) {
+    .cv {
+        grid-column: span 2;
+    }
 }
