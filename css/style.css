@@ -191,7 +191,10 @@ body {
 .time {
     background-image: url('../src/img/time.png');
 }
-
+.dactyl {
+    background-image: url('../src/img/dactyl.png');
+    grid-column: span 2;
+}
 
 
 /* Header */
@@ -306,10 +309,7 @@ header nav a:active {
 
 /* Responsive */
 @media screen and (max-width: 700px) {
-    .github {
-        grid-column: span 1;
-    }
-    .hm {
+    .case {
         grid-column: span 1;
     }
 }
