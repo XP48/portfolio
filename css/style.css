@@ -102,6 +102,7 @@ body {
     flex-direction: column;
 }
 
+
 .link:hover {
     cursor: pointer;
     background-color: transparent;
@@ -151,7 +152,7 @@ body {
 }
 .presentation {
     font-size: 20px;
-    background-color: #9bd7ff;
+    background-color: #8957ff;
 }
 
 .generate {
@@ -162,19 +163,33 @@ body {
 }
 
 .desc {
-    background-color: #ee57ff;
+    background-color: #9bd7ff;
+}
+
+.proj {
+    background-size: cover;
+    background-position: center;
 }
 
 .aim {
     background-image: url('../src/img/aim.png');
-    background-size: cover;
-    background-position: center;
 }
 
 .pwd {
     background-image: url('../src/img/pwd.png');
-    background-size: cover;
-    background-position: center;
+}
+.hm {
+    background-image: url('../src/img/HowMuch.png');
+    grid-column: span 2;
+}
+.meteo {
+    background-image: url('../src/img/meteo.png');
+}
+.demineur {
+    background-image: url('../src/img/MinesWeeper.png');
+}
+.time {
+    background-image: url('../src/img/time.png');
 }
 
 
@@ -294,9 +309,15 @@ header nav a:active {
     .github {
         grid-column: span 1;
     }
+    .hm {
+        grid-column: span 1;
+    }
 }
 @media (min-width: 700px) and (max-width: 971px) {
     .cv {
+        grid-column: span 2;
+    }
+    .demineur {
         grid-column: span 2;
     }
 }
