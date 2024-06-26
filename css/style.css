@@ -231,15 +231,14 @@ header nav a {
     border: solid 1px var(--noir);
     border-radius: 20px;
     padding: 5px;
-    transition-duration: 0s;
-    transition-delay: 0s;
+    transition-duration: 0.5s;
     width: 10rem;
     text-align: center;
 }
 
 header nav a:hover {
     transform: translate(-3px, -3px);
-    transition-delay: 0s;
+    transition-duration: 0.5s;
     cursor: pointer;
     box-shadow: var(--noir) 3px 3px;
 }
@@ -264,6 +263,11 @@ header nav a:active {
     text-align: center;
 }
 
+/* Mise en valeur */
+
+.masked {
+    display: none;
+}
 
 /* Animations au scroll */
 
